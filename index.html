@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manchester United Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>MAN UNITED QUIZ</h1>
+        <p>Test your Manchester United knowledge</p>
+    </header>
+
+    <main>
+
+        <!-- START SCREEN -->
+        <section id="start-screen" class="container">
+
+            <h2>Welcome to the quiz!</h2>
+
+            <p>Enter your name to begin.</p>
+
+            <input
+                type="text"
+                id="player-name"
+                placeholder="Enter your name"
+                maxlength="20"
+            >
+
+            <button id="start-button">START QUIZ</button>
+
+            <p id="name-error"></p>
+
+        </section>
+
+
+        <!-- QUIZ SCREEN -->
+        <section id="quiz-screen" class="container hidden">
+
+            <div class="quiz-top">
+                <h2 id="question-number">Question 1 / 9</h2>
+                <p id="player-display"></p>
+            </div>
+
+            <img
+                id="question-image"
+                src=""
+                alt="Manchester United question image"
+            >
+
+            <h2 id="question-text"></h2>
+
+            <div id="answer-buttons" class="answers">
+
+                <button class="answer-button"></button>
+                <button class="answer-button"></button>
+                <button class="answer-button"></button>
+                <button class="answer-button"></button>
+
+            </div>
+
+            <p id="feedback"></p>
+
+            <button id="next-button" class="hidden">
+                NEXT QUESTION
+            </button>
+
+        </section>
+
+
+        <!-- RESULT SCREEN -->
+        <section id="result-screen" class="container hidden">
+
+            <h2>QUIZ COMPLETED!</h2>
+
+            <p id="final-player"></p>
+
+            <h1 id="final-score">0 / 7</h1>
+
+            <p id="result-message"></p>
+
+            <button id="restart-button">
+                PLAY AGAIN
+            </button>
+
+        </section>
+
+
+        <!-- LEADERBOARD -->
+        <section class="container leaderboard">
+
+            <h2>LEADERBOARD</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Player</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+
+                <tbody id="leaderboard-body">
+
+                </tbody>
+
+            </table>
+
+            <button id="clear-button" class="clear-button">
+                CLEAR LEADERBOARD
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Manchester United Quiz © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
